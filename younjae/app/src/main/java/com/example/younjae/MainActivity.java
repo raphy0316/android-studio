@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         et = (EditText) findViewById(R.id.editText);
+        save = (ImageButton) findViewById(R.id.save);
 
         SharedPreferences sf = getSharedPreferences(sfName,0);
         String str = sf.getString("name","");
